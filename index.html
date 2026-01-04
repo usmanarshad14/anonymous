@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mere Dil Ki Baat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Content shuruat mein hide rahega */
+        #main-content {
+            display: none;
+        }
+
+        body {
+            background-color: #1a1a2e;
+            font-family: 'Georgia', serif;
+            color: #e0e0e0;
+            padding-bottom: 50px;
+        }
+
+        .main-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 50px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .heart-heading {
+            color: #ff4d6d;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .main-text {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            text-align: justify;
+            color: #f8f9fa;
+        }
+
+        .highlight-box {
+            background: rgba(255, 77, 109, 0.1);
+            border-left: 4px solid #ff4d6d;
+            padding: 20px;
+            margin: 30px 0;
+            font-style: italic;
+            font-size: 1.25rem;
+            color: #ffb7c5;
+        }
+
+        .gallery-img {
+            width: 100%; /* Behtar responsive look ke liye 100% */
+            height: 389px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 2px solid #ff4d6d;
+            transition: all 0.5s ease;
+            margin-bottom: 20px;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.03) rotate(1deg);
+            border-color: #ffd700;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main-content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 main-card">
+                    <h1 class="heart-heading">Tumhare Liye...</h1>
+
+                    <div class="main-text">
+                        <p>
+                            Par fir meri zindagi main aayi tum, tum auron se kuch alag lagi. Tumse baat karke kuch apna sa
+                            laga.
+                            Mai tumse attach nahi hona chahta tha par dheere dheere tumhari aadaton mein dhalne lage.
+                            Maine bahut samjhaya khud ko ki ek din tum bhi achanak mujhse door ho jaoge sabh ki tarah,
+                            raat bhar khoob baatein karoge aur subha hone tak sabh bhool jaoge.
+                        </p>
+
+                        <p>
+                            Attachment buri cheez hoti hai mujhe pata tha par mai khud ko rok hi nahi paya.
+                            Pata nahi par andar se ek awaaz aati thi ki tumhare sath ye rishta lamba chalega kyoki tumhari
+                            taraf se bhi pyar dikhta tha,
+                            efforts dikhte the aur mai toh ye soch bhi nahi pa raha tha ki tum door chali jaoge toh kaisa
+                            lagega.
+                        </p>
+
+                        <div class="highlight-box">
+                            "Tumhare dil ko jitna main samajhta hoon, utna shayad tum khud bhi nahi samajhi.
+                            Main tumhe khone se nahi, tumhe hurt karne se darta hoon."
+                        </div>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-md-4">
+                            <img src="images/WhatsApp Image 2026-01-04 at 4.30.57 AM.jpeg" class="gallery-img" alt="Memory 1">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/WhatsApp Image 2026-01-04 at 4.30.58 AM (1).jpeg" class="gallery-img" alt="Memory 2">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/WhatsApp Image 2026-01-04 at 4.30.58 AM (2).jpeg" class="gallery-img" alt="Memory 3">
+                        </div>
+                        <div class="col-md-6 mt-2">
+                            <img src="images/WhatsApp Image 2026-01-04 at 4.30.58 AM (3).jpeg" class="gallery-img" alt="Memory 4">
+                        </div>
+                        <div class="col-md-6 mt-2">
+                            <img src="images/WhatsApp Image 2026-01-04 at 4.30.58 AM.jpeg" class="gallery-img" alt="Memory 5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            var correctPassword = "591740"; // Aapka requested password
+            var userInput = prompt("Secret message ke liye password enter karein:");
+
+            if (userInput === correctPassword) {
+                document.getElementById("main-content").style.display = "block";
+            } else {
+                alert("Galat Password! Dobara koshish karein.");
+                document.body.innerHTML = `
+                    <div style="color:white; text-align:center; margin-top:20%; font-family:sans-serif;">
+                        <h1>Access Denied</h1>
+                        <p>Refresh the page and enter the correct password.</p>
+                    </div>
+                `;
+            }
+        })();
+    </script>
+
+</body>
+
+</html>
